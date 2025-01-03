@@ -114,3 +114,134 @@
   cursor: pointer;
   scale: 1.3;
 }
+
+.imageContainer {
+  height: 100vh;
+  width: 99vw;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.descriptionDiv {
+  position: absolute;
+  top: 25vh;
+  left: 38vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.descriptionHeader {
+  color: white;
+  animation: slideUp 4s ease-out infinite;
+}
+
+.descriptionParagraph {
+  color: white;
+  margin-top: -2vh;
+  animation: slideUp 4s ease-out infinite;
+  font-family: Mogra;
+}
+.homePageImg {
+  height: 100vh;
+}
+
+.bookNowBtn {
+  color: rgb(0, 0, 105);
+  border: 1px solid rgb(0, 0, 105);
+  animation: slideUp 4s ease-out infinite;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px); /* Start from 100px below */
+    opacity: 0; /* Initially hidden */
+  }
+  50% {
+    transform: translateY(0); /* Move to normal position */
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    transform: translateY(0); /* Move back down to start position */
+    opacity: 1; /* Fade out */
+  }
+}
+
+.element {
+  animation: slideUp 4s ease-out infinite; /* Repeat every 4 seconds */
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .mainHeaderDiv {
+    flex-direction: column;
+    height: 18vh;
+    gap: 0;
+  }
+
+  .airplaneImage {
+    height: 5vh;
+  }
+  .mainHeaderText {
+    font-size: 1.2rem;
+  }
+  .mainHeaderParagraph {
+    font-size: 1rem;
+  }
+
+  .destinationHeader {
+    font-size: 0.8rem;
+    padding: 0;
+    width: max-content;
+  }
+  .destinationsDiv {
+    margin-left: 0;
+    gap: 5vw;
+  }
+
+  .shoppingCartDiv {
+    display: flex;
+    position: absolute;
+    right: 1vh;
+    top: 1vh;
+  }
+
+  .homeBtn {
+    display: none;
+  }
+
+  .logoDiv {
+    margin-top: 0;
+  }
+
+  .homePageImg {
+    height: 70vh;
+    width: 99vw;
+  }
+
+  .descriptionDiv {
+    top: 20vh;
+    left: 7vh;
+  }
+
+  .descriptionHeader {
+    font-size: 2rem;
+  }
+
+  .descriptionParagraph {
+    font-size: 1.2rem;
+  }
+
+  .imageContainer {
+    height: 90vh;
+    width: 100vw;
+  }
+
+}
