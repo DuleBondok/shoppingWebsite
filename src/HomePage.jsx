@@ -1,5 +1,6 @@
 import Header from "./Header";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const [images, setImages] = useState([]);
@@ -90,7 +91,9 @@ function HomePage() {
         <p className="descriptionParagraph">
           {descriptiveParagraphs[currentIndex]}
         </p>
-        <button className="bookNowBtn">BOOK NOW</button>
+        <Link to="/listOf">
+          <button className="bookNowBtn">BOOK NOW</button>
+        </Link>
       </div>
     </>
   );

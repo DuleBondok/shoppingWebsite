@@ -7,8 +7,13 @@
   font-family: Mogra;
   src: url("/fonts/Mogra.ttf");
 }
+
+@font-face {
+  font-family: Teko;
+  src: url("/fonts/Teko.ttf");
+}
 .mainHeaderDiv {
-  background-color: rgb(143, 143, 143);
+  background-color: black;
   position: absolute;
   top: 0;
   left: 0;
@@ -37,7 +42,7 @@
 .mainHeaderText {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 2rem;
-  color: rgb(0, 0, 105);
+  color: white;
 }
 
 .logoHeaderDiv {
@@ -69,7 +74,7 @@
   padding-bottom: 2vh;
   padding-top: 2vh;
   text-decoration: underline;
-  color: rgb(0, 0, 114);
+  color: rgb(179, 179, 179);
   border-radius: 1vh;
   padding-left: 1vh;
   padding-right: 1vh;
@@ -94,7 +99,7 @@
   font-size: 1.2rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-top: 2vh;
-  color: black;
+  color: white;
   padding-top: 2vh;
   padding-bottom: 2vh;
   padding-left: 1vh;
@@ -122,13 +127,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(145, 145, 145);
 }
 
 .descriptionDiv {
   position: absolute;
   top: 25vh;
-  left: 38vw;
+  left: 36vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -175,6 +180,239 @@
   animation: slideUp 4s ease-out infinite; /* Repeat every 4 seconds */
 }
 
+.listOfDestinationsDiv {
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  height: 90vh;
+  border-right: 1px solid rgb(131, 131, 131);
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  padding-top: 5vh;
+}
+
+.countryNames {
+  font-size: 1.5rem;
+  font-family: Mogra;
+  margin-top: 2vh;
+}
+
+.countryDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1vw;
+  background-color: rgb(236, 236, 236);
+}
+
+.countryDiv:hover {
+  background-color: beige;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.countryImg {
+  height: 4vh;
+  margin-left: 1vw;
+}
+
+.listHeader {
+  position: absolute;
+  top: 12vh;
+  left: 16vw;
+  font-size: 1.8rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.shoppingListDiv {
+  position: absolute;
+  top: 20vh;
+  left: 16vw;
+  height: 74vh;
+  width: 80vw;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.greeceDestination {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  height: 45vh;
+  border-radius: 1vh;
+  background-color: white ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease;
+}
+
+.greeceDestination:hover {
+  transform: scale(1.2);
+}
+
+.destinationName {
+  font-family: Teko;
+  font-size: 1.8rem;
+  color: black;
+  margin-left: 1vw;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.55);
+  border-bottom: 1px solid rgb(151, 151, 151);
+  width: 80%;
+}
+
+.greekImg {
+ height: 22vh;
+}
+
+.descriptionDestination {
+  font-size: 1.2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.mainDescriptionDiv {
+  height: 4vh;
+  width: 99%;
+  margin-top: -2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4.1vw;
+}
+
+.calenderDiv {
+  width: 30%;
+  height: 4vh;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vw;
+}
+
+.transportDiv {
+  width: 30%;
+  height: 4vh;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vw;
+}
+
+.calendarIcon {
+  height: 2vh;
+}
+
+.transportIcon {
+  height: 3vh;
+}
+
+.numberOfDays {
+  font-family: Mogra;
+  font-size: 0.9rem;
+  margin-top: 1.2vh;
+}
+
+.transportName {
+  font-family: Mogra;
+  font-size: 0.9rem;
+  margin-top: 1.2vh;
+}
+
+.signDiv {
+  position: absolute;
+  height: 3vh;
+  width: 4vw;
+  top: 18vh;
+  margin-left: 0.7vw;
+  border-radius: 1vh;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(51, 163, 255);
+  align-items: center;
+  gap: 0.3vw;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.signIcon {
+  height: 2vh;
+}
+
+.signHeader {
+  color: white;
+  font-size: 0.8rem;
+  font-family: Bangers;
+  font-weight: 100;
+  margin-top: 1vh;
+}
+
+.foodDiv {
+  display: flex;
+  flex-direction: row;
+  height: 3vh;
+  width: 9vw;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4vw;
+  margin-left: 0.55vw;
+}
+
+.foodIcon {
+  height: 2.4vh;
+}
+
+.foodHeader {
+  color: black;
+  font-size: 0.8rem;
+  font-family: Mogra;
+  font-weight: 100;
+  margin-top: 1vh;
+}
+
+.priceHeader {
+  font-size: 1rem;
+  font-family: Teko;
+  color: black;
+}
+
+.priceParagraph {
+  font-size: 1.4rem;
+  font-family: Teko;
+  color: rgb(51, 163, 255);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.55);
+}
+
+.priceDiv {
+  display: flex;
+  flex-direction: row;
+  height: 3vh;
+  gap: 0.5vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5vh;
+}
+
+.viewDetailsBtn {
+  border: 1px solid black;
+  background-color: orangered;
+  color: white;
+  font-family: cursive;
+  width: 55%;
+  margin-left: 3.6vw;
+  margin-top: 1vh;
+  font-weight: 600;
+}
+
+.viewDetailsBtn:hover {
+  background-color: red;
+  border: 1px solid black;
+}
 
 @media screen and (max-width: 768px) {
   body {
@@ -243,5 +481,99 @@
     height: 90vh;
     width: 100vw;
   }
+
+  .listOfDestinationsDiv {
+    width: 20vw;
+    top: 16vh;
+  }
+
+  .countryNames {
+    font-size: 0.5rem;
+    margin-top: 1vh;
+  }
+
+  .countryImg {
+    height: 2vh;
+  }
+
+  .listHeader {
+    top: 17vh;
+    font-size: 1rem;
+    left: 22vw;
+  }
+
+  .shoppingListDiv {
+    top: 23vh;
+    width: 72vw;
+    left: 24vw;
+  }
+
+  .greeceDestination {
+    width: 60vw;
+  }
+
+  .signDiv {
+    width: 16vw;
+    gap: 1vw;
+  }
+
+  .signHeader {
+    margin-top: 1.6vh;
+  }
+
+  .destinationName {
+    font-size: 1rem;
+    margin-left: 1vw;
+  }
+
+  .calenderDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    width: 20vw;
+  }
+
+  .transportDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    width: 20vw;
+  }
+
+  .mainDescriptionDiv {
+    margin-top: 0;
+    gap: 9vw;
+  }
+
+  .numberOfDays {
+    margin-top: 2vh;
+  }
+
+  .transportName {
+    margin-top: 2vh;
+  }
+
+  .foodDiv {
+    width: 47vw;
+    gap: 1vw;
+  }
+
+  .foodHeader {
+    margin-top: 1.5vh;
+  }
+
+  .priceDiv {
+    gap: 1.5vw;
+  }
+
+  .viewDetailsBtn {
+    width: 36vw;
+    font-size: 0.8rem;
+    height: 4vh;
+    margin-left: 12vw;
+  }
+
 
 }

@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <>
@@ -17,7 +20,9 @@ function Header() {
           <h1 className="destinationHeader">SUMMER 2025</h1>
         </div>
         <div className="shoppingCartDiv">
-          <h1 className="homeBtn">HOME</h1>
+          <Link to="/home">
+            <h1 className="homeBtn">HOME</h1>
+          </Link>
           <img src="/shopping.png" className="shoppingImg"></img>
         </div>
       </div>
