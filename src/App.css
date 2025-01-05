@@ -231,12 +231,13 @@
   position: absolute;
   top: 20vh;
   left: 16vw;
-  height: 74vh;
+  height: 110vh;
   width: 80vw;
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 5vw;
+  flex-wrap: wrap;
 }
 
 .greeceDestination {
@@ -249,6 +250,7 @@
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: transform 0.3s ease;
+  overflow: visible;
 }
 
 .greeceDestination:hover {
@@ -312,6 +314,12 @@
   height: 3vh;
 }
 
+.transportIconAirplane {
+  height: 2vh;
+  margin-right: -0.3vw;
+  margin-bottom: 0.4vh;
+}
+
 .numberOfDays {
   font-family: Mogra;
   font-size: 0.9rem;
@@ -339,6 +347,57 @@
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.signDivSecond {
+    position: absolute;
+    height: 3vh;
+    width: 4vw;
+    top: 18vh;
+    margin-left: 5vw;
+    border-radius: 1vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(51, 163, 255);
+    align-items: center;
+    gap: 0.3vw;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .signDivSecondDown {
+    position: absolute;
+    height: 3vh;
+    width: 4vw;
+    top: 78vh;
+    margin-left: 5vw;
+    border-radius: 1vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(51, 163, 255);
+    align-items: center;
+    gap: 0.3vw;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
+    transform-origin: center center;
+  }
+
+  .signDivDown {
+    position: absolute;
+    height: 3vh;
+    width: 4vw;
+    top: 78vh;
+    margin-left: 0.7vw;
+    border-radius: 1vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(51, 163, 255);
+    align-items: center;
+    gap: 0.3vw;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
 
 .signIcon {
   height: 2vh;
@@ -386,6 +445,7 @@
   font-family: Teko;
   color: rgb(51, 163, 255);
   text-shadow: 1px 1px 1px rgba(0,0,0,0.55);
+  margin-bottom: 2vh;
 }
 
 .priceDiv {
@@ -505,7 +565,10 @@
   .shoppingListDiv {
     top: 23vh;
     width: 72vw;
+    height: fit-content;
     left: 24vw;
+    flex-direction: column;
+    align-items: center;
   }
 
   .greeceDestination {
@@ -515,6 +578,7 @@
   .signDiv {
     width: 16vw;
     gap: 1vw;
+    display: none;
   }
 
   .signHeader {
@@ -573,6 +637,10 @@
     font-size: 0.8rem;
     height: 4vh;
     margin-left: 12vw;
+  }
+
+  .signDivSecond {
+    display: none;
   }
 
 
