@@ -244,16 +244,161 @@
   display: flex;
   flex-direction: column;
   width: 16vw;
-  height: 45vh;
+  height: 48vh;
   border-radius: 1vh;
   background-color: white ;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: transform 0.3s ease;
-  overflow: visible;
+  overflow: hidden;
+  position: relative;
 }
 
 .greeceDestination:hover {
+  transform: scale(1.2);
+}
+
+.italyCapitalDestination {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  height: 48vh;
+  border-radius: 1vh;
+  background-color: white ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.italyCapitalDestination:hover {
+  transform: scale(1.2);
+}
+
+.capitalDestination {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  height: 48vh;
+  border-radius: 1vh;
+  background-color: white ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.capitalDestination:hover {
+  transform: scale(1.2);
+}
+
+.italyDestination {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  height: 48vh;
+  border-radius: 1vh;
+  background-color: white ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.italyDestination:hover {
+  transform: scale(1.2);
+}
+
+.spainDestination {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  height: 48vh;
+  border-radius: 1vh;
+  background-color: white ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.spainDestination:hover {
+  transform: scale(1.2);
+}
+
+.montenegroDestination {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  height: 48vh;
+  border-radius: 1vh;
+  background-color: white ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.montenegroDestination:hover {
+  transform: scale(1.2);
+}
+
+.turkeyCapitalDestination {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  height: 48vh;
+  border-radius: 1vh;
+  background-color: white ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.turkeyCapitalDestination:hover {
+  transform: scale(1.2);
+}
+
+.turkeyDestination {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  height: 48vh;
+  border-radius: 1vh;
+  background-color: white ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.turkeyDestination:hover {
+  transform: scale(1.2);
+}
+
+.egyptDestination {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  height: 48vh;
+  border-radius: 1vh;
+  background-color: white ;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.egyptDestination:hover {
   transform: scale(1.2);
 }
 
@@ -270,6 +415,7 @@
 
 .greekImg {
  height: 22vh;
+ width: 16vw;
 }
 
 .descriptionDestination {
@@ -365,11 +511,9 @@
   }
 
   .signDivSecondDown {
-    position: absolute;
+    position: relative;
     height: 3vh;
     width: 4vw;
-    top: 78vh;
-    margin-left: 5vw;
     border-radius: 1vh;
     display: flex;
     flex-direction: row;
@@ -380,14 +524,13 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 10;
     transform-origin: center center;
+    transform: scale(0.833);
   }
 
   .signDivDown {
-    position: absolute;
+    position: relative;
     height: 3vh;
     width: 4vw;
-    top: 78vh;
-    margin-left: 0.7vw;
     border-radius: 1vh;
     display: flex;
     flex-direction: row;
@@ -396,6 +539,13 @@
     gap: 0.3vw;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .mainDownDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: -4.5vh;
+    margin-left: 0.5vw;
   }
 
 
@@ -575,6 +725,42 @@
     width: 60vw;
   }
 
+  .italyCapitalDestination {
+    width: 60vw;
+  }
+
+  .capitalDestination {
+    width: 60vw;
+  }
+
+  .italyCapitalDestination {
+    width: 60vw;
+  }
+
+  .italyDestination {
+    width: 60vw;
+  }
+
+  .turkeyCapitalDestination {
+    width: 60vw;
+  }
+
+  .turkeyDestination {
+    width: 60vw;
+  }
+
+  .egyptDestination {
+    width: 60vw;
+  }
+
+  .montenegroDestination {
+    width: 60vw;
+  }
+
+  .spainDestination {
+    width: 60vw;
+  }
+
   .signDiv {
     width: 16vw;
     gap: 1vw;
@@ -640,6 +826,10 @@
   }
 
   .signDivSecond {
+    display: none;
+  }
+
+  .mainDownDiv {
     display: none;
   }
 
