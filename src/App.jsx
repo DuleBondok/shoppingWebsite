@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import HomePage from "./HomePage";
 import ListOf from "./ListOf";
-import { Corfu } from "./Corfu";
+import Corfu from "./Corfu";
 
 function App() {
   return (

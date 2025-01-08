@@ -1,27 +1,365 @@
+@font-face {
+    font-family: Bangers;
+    src: url("/fonts/Bangers.ttf");
+  }
+  
+  @font-face {
+    font-family: Mogra;
+    src: url("/fonts/Mogra.ttf");
+  }
+  
+  @font-face {
+    font-family: Teko;
+    src: url("/fonts/Teko.ttf");
+  }
+
 .mainCorfuDiv {
-    height: 100vh;
-    width: 100vw;
-    border: 1px solid black;
+    height: 170vh;
+    width: 99vw;
+    position: absolute;
+    top: 9.50vh;
+    left: 0;
 }
 
 .corfuImg1 {
-    width: 50vw;
+    height: 54vh;;
+    
 }
 
 .corfuImg2 {
-    width: 20vw;
+    height: 25vh;
+    
 }
 
 .corfuImg3 {
-    width: 20vw;
+    height: 27vh;
+    
 }
 
 .corfuImagesDiv {
     display: flex;
     flex-direction: row;
+    gap: 2vh;
+    border-radius: 1vh;
+    overflow: hidden;
+    position: absolute;
+    top: 10vh;
+    left: 21.9vw;
 }
 
 .corfuImagesVerticalDiv {
     display: flex;
     flex-direction: column;
+    gap: 2vh;
+}
+
+.corfuHeaderDiv {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 70vw;
+    height: 10vh;
+    top: 68vh;
+    left: 15vw;
+    gap: 2vw;
+    align-items: center;
+}
+
+.corfuHeader {
+    font-size: 3rem;
+    font-family: Teko;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.55);
+}
+
+.corfuInfo {
+    font-size: 1.1rem;
+    font-family: Bangers;
+    background-color: rgb(51, 163, 255);
+    color: white;
+    padding: 1vh;
+    border-radius: 3vh;
+    letter-spacing: 0.5rem;
+}
+
+.infoAboutDiv {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 78vh;
+    height: 7vh;
+    width: 70vw;
+    left: 15vw;
+    gap: 35vw;
+    justify-content: center;
+}
+
+.corfuDateDiv {
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    align-items: center;
+    gap: 1vw;
+}
+
+.corfuTravelDiv {
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    align-items: center;
+    gap: 1vw;
+}
+
+.corfuPriceDiv {
+    display: flex;
+    flex-direction: row;
+    width: 15vw;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.corfuCalender {
+    height: 3vh;
+}
+
+.corfuNumberOfDays {
+    font-size: 1.5rem;
+    font-family: Bangers;
+}
+
+.corfuBusImg {
+    height: 4.5vh;
+}
+
+.corfuHorizontalDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.corfuPriceSmallHeader {
+    font-size: 1.5rem;
+    font-family: Teko;
+}
+
+.corfuPriceBigHeader {
+    font-size: 2.6rem;
+    font-family: Teko;
+    color: rgb(51, 163, 255);
+}
+
+.corfuDescriptionDiv {
+    position: absolute;
+    height: 25vh;
+    width: 69.2vw;
+    top: 90vh;
+    left: 15vw;
+}
+
+.corfuDescriptionHeader {
+    font-size: 1.65rem;
+    line-height: 1.8rem;
+    font-family: Teko;
+    font-weight: 400;
+    color: black;
+    background-color: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 1.5vh;
+}
+
+.corfuReservationDiv {
+    width: 70vw;
+    position: absolute;
+    top: 122vh;
+    height: 8vh;
+    left: 15vw;
+    display: flex;
+    flex-direction: row;
+    gap: 15vw;
+    justify-content: center;
+}
+
+.reservationHeader {
+    font-size: 5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.datesDiv {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 20vw;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.chooseDateLabel {
+    width: fit-content;
+    background-color: white;
+    margin-top: -2.8vh;
+    margin-left: 3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-size: 1.6rem;
+}
+
+.stayDateSelect {
+    padding: 1vh;
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+    padding-left: 3vh;
+    appearance: none; /* Removes default styles */
+      -webkit-appearance: none; /* Safari */
+      -moz-appearance: none; /* Firefox */
+      background-image: url("/public/downArrow.png");
+      background-repeat: no-repeat;
+      background-size: 2.5vh;
+      background-position: right 2vh center;
+}
+
+.personsDiv {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 20vw;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.totalPriceHeader {
+    font-size: 1.6rem;
+    font-family: teko;
+}
+
+.totalPriceDiv {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 132vh;
+    left: 44vw;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.totalPriceState {
+    font-size: 1.8rem;
+    font-family: Teko;
+    color: rgb(51, 163, 255);
+}
+
+@media screen and (max-width: 768px) {
+    .mainCorfuDiv {
+        width: 50vw;
+    }
+    .corfuImagesDiv {
+        flex-direction: column;
+        left: 10vw;
+    }
+
+    .corfuImagesVerticalDiv {
+        flex-direction: row;
+    }
+
+    .corfuImg1 {
+        height: auto;
+        width: 80vw;
+    }
+
+    .corfuImg2 {
+        height: 15vh;
+        width: 37.5vw;
+    }
+
+    .corfuImg3 {
+        width: 39vw;
+        height: 15vh;
+    }
+
+    .corfuHeader {
+        font-size: 1.8rem;
+    }
+
+    .corfuInfo {
+        font-size: 1rem;
+    }
+
+    .corfuHeaderDiv {
+        width: 90vw;
+        left: 5vw;
+        top: 60vh;
+        gap: 13vw;
+    }
+    
+    .infoAboutDiv {
+        flex-direction: column;
+        top: 66vh;
+        gap: 5vw;
+        height: 30vh;
+        width: 84vw;
+        left: 8vw;
+    }
+
+    .corfuDateDiv {
+        width: 30vw;
+    }
+
+    .corfuTravelDiv {
+        width: 30vw;
+    }
+
+    .corfuHorizontalDiv {
+        gap: 45vw;
+    }
+
+    .corfuPriceDiv {
+        width: 50vw;
+        margin-left: 17vw;
+    }
+    .corfuPriceSmallHeader {
+        font-size: 1rem;
+    }
+
+    .corfuPriceBigHeader {
+        font-size: 1.5rem;
+    }
+
+    .corfuDescriptionHeader {
+        font-size: 1rem;
+    }
+    .corfuDescriptionDiv {
+        width: 94vw;
+        left: 3vw;
+    }
+
+    .corfuReservationDiv {
+        top: 158vh;
+        height: 10vh;
+        width: 94vw;
+        left: 3vw;
+        gap: 10vw;
+    }
+
+    .chooseDateLabel {
+        font-size: 0.8rem;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .datesDiv {
+        width: 40vw;
+    }
+
+    .personsDiv {
+        width: 40vw;
+    }
+
+    .totalPriceDiv {
+        top: 168vh;
+        width: 50vw;
+        left: 28vw;
+        gap: 1vw;
+    }
+
+    .totalPriceHeader {
+        width: 30vw;
+    }
+
 }
