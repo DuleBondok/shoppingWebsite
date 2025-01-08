@@ -1,5 +1,6 @@
 import Header from "./Header";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function ListOf() {
   const [images, setImages] = useState([]);
@@ -322,7 +323,9 @@ function ListOf() {
             <h1 className="priceParagraph"> 740$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/corfu">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
         <div
           className="greeceDestination"

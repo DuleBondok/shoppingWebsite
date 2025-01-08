@@ -14,7 +14,7 @@
 }
 .mainHeaderDiv {
   background-color: black;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,8 +22,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 14vw;
+  gap: 55vw;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 10;
 }
 
 .airplaneImage {
@@ -60,7 +61,7 @@
 }
 
 .destinationsDiv {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -181,7 +182,7 @@
 }
 
 .listOfDestinationsDiv {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 10vh;
   height: 90vh;
@@ -189,12 +190,12 @@
   width: 12vw;
   display: flex;
   flex-direction: column;
-  gap: 5vh;
-  padding-top: 5vh;
+  gap: 4.2vh;
+  margin-top: 1vh;
 }
 
 .countryNames {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: Mogra;
   margin-top: 2vh;
 }
@@ -695,6 +696,8 @@
   .listOfDestinationsDiv {
     width: 20vw;
     top: 16vh;
+    margin-top: 2vh;
+    gap: 10vw;
   }
 
   .countryNames {
@@ -831,6 +834,10 @@
 
   .mainDownDiv {
     display: none;
+  }
+
+  .greekImg {
+    width: 60vw;
   }
 
 
