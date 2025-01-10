@@ -1,8 +1,14 @@
-# React + Vite
+![Example Image](./public/screenshot.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Travel Agency ShoppingCart
+Online travel agency website. Consists of an landing page and a shopping cart mockup.<br>
+Uses API to fetch images and display them on the website.<br> Users can choose a date and number of persons and then add items to cart
 
-Currently, two official plugins are available:
+**🧭 Possible Future Implementations**
+- User register and authentication
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## 💻 Built With
+![javascript](https://skillicons.dev/icons?i=js,react&perline=10)
+
+# Live Demo: [https://travel-agency-website-lemon.vercel.app/listOf]
