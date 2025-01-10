@@ -3,16 +3,35 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Plans.css";
 import "./App.css";
+import { useContext } from "react";
+import { CartContext } from "./CartContext";
 
 function Corfu() {
-  const [totalPrice, setTotalPrice] = useState(720); // Initial price for 1 person
+  const [totalPrice, setTotalPrice] = useState(720);
   const [numberOfPersons, setNumberOfPersons] = useState(1);
+  const [stayDate, setStayDate] = useState("23.05 - 30.05");
 
-  // Handler for changing the number of persons
+  const { addToCart } = useContext(CartContext);
+
   const handlePersonsChange = (event) => {
-    const selectedPersons = parseInt(event.target.value); // Convert to number
+    const selectedPersons = parseInt(event.target.value);
     setNumberOfPersons(selectedPersons);
-    setTotalPrice(selectedPersons * 720); // Update the total price
+    setTotalPrice(selectedPersons * 720);
+  };
+
+  const handleDateChange = (event) => {
+    setStayDate(event.target.value);
+  };
+
+  const handleAddToCart = () => {
+    const tripDetails = {
+      destination: "Corfu",
+      stayDate,
+      numberOfPersons,
+      totalPrice,
+    };
+    addToCart(tripDetails); // Add the trip details to the cart
+    alert("Added to cart!");
   };
 
   return (
@@ -69,7 +88,12 @@ function Corfu() {
         <div className="corfuReservationDiv">
           <div className="datesDiv">
             <label className="chooseDateLabel">Choose stay dates:</label>
-            <select id="stayDate" name="stayDate" className="stayDateSelect">
+            <select
+              id="stayDate"
+              name="stayDate"
+              className="stayDateSelect"
+              onChange={handleDateChange}
+            >
               <option>23.05 - 30.05</option>
               <option>01.06 - 09.06</option>
               <option>15.06 - 23.06</option>
@@ -94,7 +118,9 @@ function Corfu() {
           <h1 className="totalPriceHeader">Total price:</h1>
           <h1 className="totalPriceState">{totalPrice}$</h1>
         </div>
-        <button className="addToCartBtn">Book this trip</button>
+        <button className="addToCartBtn" onClick={handleAddToCart}>
+          Add to cart
+        </button>
       </div>
     </>
   );

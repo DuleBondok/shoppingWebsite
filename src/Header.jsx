@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "./CartContext";
+import { useContext } from "react";
 
 function Header() {
+  const { cart } = useContext(CartContext); // Access the cart from context
   return (
     <>
       <div className="mainHeaderDiv">
@@ -24,7 +27,10 @@ function Header() {
           <Link to="/home">
             <h1 className="homeBtn">HOME</h1>
           </Link>
-          <img src="/shopping.png" className="shoppingImg"></img>
+          <div className="shoppingCartIconDiv">
+            <img src="/shopping.png" className="shoppingImg"></img>
+            {cart.length > 0 && <h1 className="cartCount">{cart.length}</h1>}
+          </div>
         </div>
       </div>
     </>

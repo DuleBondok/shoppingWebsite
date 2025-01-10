@@ -625,6 +625,26 @@
   border: 1px solid black;
 }
 
+.shoppingCartIconDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2.5vh;
+  height: 5vh;
+}
+
+.cartCount {
+  background-color: rgb(51, 163, 255);
+  font-size: 1rem;
+  width: fit-content;
+  padding-top: 0.3vh;
+  padding-right: 0.6vh;
+  padding-bottom: 0.3vh;
+  padding-left: 0.6vh;
+  margin-top: -0.3vh;
+  margin-left: 2vh;
+}
+
 @media screen and (max-width: 768px) {
   body {
     font-size: 16px;

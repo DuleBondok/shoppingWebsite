@@ -44,7 +44,7 @@
     overflow: hidden;
     position: absolute;
     top: 10vh;
-    left: 21.9vw;
+    left: 17vw;
 }
 
 .corfuImagesVerticalDiv {
@@ -244,6 +244,18 @@
     font-size: 1.8rem;
     font-family: Teko;
     color: rgb(51, 163, 255);
+}
+
+.addToCartBtn {
+    position: absolute;
+    top: 146vh;
+    left: 45.5vw;
+    background-color: rgb(51, 163, 255);
+    color: white;
+}
+
+.addToCartBtn:hover {
+    scale: 1.2;
 }
 
 @media screen and (max-width: 768px) {
