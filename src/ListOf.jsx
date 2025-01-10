@@ -367,7 +367,9 @@ function ListOf() {
             <h1 className="priceParagraph"> 910$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/zakynthos">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
         <div
           className="italyCapitalDestination"
@@ -412,7 +414,9 @@ function ListOf() {
             <h1 className="priceParagraph"> 190$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/rome">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
         <div
           className="capitalDestination"
@@ -450,7 +454,9 @@ function ListOf() {
             <h1 className="priceParagraph"> 150$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/prague">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
         <div
           className="capitalDestination"
@@ -490,7 +496,9 @@ function ListOf() {
             <h1 className="priceParagraph"> 180$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/budapest">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
         <div
           className="italyDestination"
@@ -535,7 +543,9 @@ function ListOf() {
             <h1 className="priceParagraph"> 1100$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/sicily">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
         <div
           className="spainDestination"
@@ -579,7 +589,9 @@ function ListOf() {
             <h1 className="priceParagraph"> 720$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/barcelona">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
         <div
           className="montenegroDestination"
@@ -622,7 +634,9 @@ function ListOf() {
             <h1 className="priceParagraph"> 600$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/budva">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
         <div
           className="spainDestination"
@@ -663,10 +677,12 @@ function ListOf() {
           </div>
           <div className="priceDiv">
             <h1 className="priceHeader">Starting from </h1>
-            <h1 className="priceParagraph"> 180$</h1>
+            <h1 className="priceParagraph"> 810$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/grancanaria">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
         <div
           className="turkeyCapitalDestination"
@@ -709,7 +725,9 @@ function ListOf() {
             <h1 className="priceParagraph"> 140$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/istanbul">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
         <div
           className="turkeyDestination"
@@ -754,7 +772,9 @@ function ListOf() {
             <h1 className="priceParagraph"> 1200$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/bodrum">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
         <div
           className="egyptDestination"
@@ -795,7 +815,9 @@ function ListOf() {
             <h1 className="priceParagraph"> 960$</h1>
             <h1 className="priceHeader"> per person.</h1>
           </div>
-          <button className="viewDetailsBtn">VIEW DETAILS</button>
+          <Link to="/hurghada">
+            <button className="viewDetailsBtn">VIEW DETAILS</button>
+          </Link>
         </div>
       </div>
     </>

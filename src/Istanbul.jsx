@@ -6,10 +6,10 @@ import "./App.css";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 
-function Corfu() {
-  const [totalPrice, setTotalPrice] = useState(720);
+function Istanbul() {
+  const [totalPrice, setTotalPrice] = useState(140);
   const [numberOfPersons, setNumberOfPersons] = useState(1);
-  const [stayDate, setStayDate] = useState("23.05. - 03.06.");
+  const [stayDate, setStayDate] = useState("11.04. - 16.04.");
   const [showNotification, setShowNotification] = useState(false);
 
   const { addToCart } = useContext(CartContext);
@@ -17,7 +17,7 @@ function Corfu() {
   const handlePersonsChange = (event) => {
     const selectedPersons = parseInt(event.target.value);
     setNumberOfPersons(selectedPersons);
-    setTotalPrice(selectedPersons * 720);
+    setTotalPrice(selectedPersons * 140);
   };
 
   const handleDateChange = (event) => {
@@ -26,7 +26,7 @@ function Corfu() {
 
   const handleAddToCart = () => {
     const tripDetails = {
-      destination: "Corfu",
+      destination: "Istanbul",
       stayDate,
       numberOfPersons,
       totalPrice,
@@ -45,21 +45,21 @@ function Corfu() {
       <Header></Header>
       <div className="mainCorfuDiv">
         <div className="corfuImagesDiv">
-          <img className="corfuImg1" src="/public/corfu1.jpg"></img>
+          <img className="corfuImg1" src="/public/istanbul1.jpg"></img>
           <div className="corfuImagesVerticalDiv">
-            <img className="corfuImg2" src="/public/corfu2.jpg"></img>
-            <img className="corfuImg3" src="/public/corfu3.jpg"></img>
+            <img className="corfuImg2" src="/public/istanbul2.jpg"></img>
+            <img className="corfuImg3" src="/public/istanbul3.jpg"></img>
           </div>
         </div>
         <div className="corfuHeaderDiv">
-          <h1 className="corfuHeader">CORFU 10 days</h1>
-          <h1 className="corfuInfo">SEASIDE</h1>
+          <h1 className="corfuHeader">ISTANBUL 5 days</h1>
+          <h1 className="corfuInfo">CULTURAL</h1>
         </div>
         <div className="infoAboutDiv">
           <div className="corfuHorizontalDiv">
             <div className="corfuDateDiv">
               <img src="/public/calendar.png" className="corfuCalender"></img>
-              <h1 className="corfuNumberOfDays">10 days</h1>
+              <h1 className="corfuNumberOfDays">4 days</h1>
             </div>
             <div className="corfuTravelDiv">
               <img src="/public/bus.png" className="corfuBusImg"></img>
@@ -68,27 +68,26 @@ function Corfu() {
           </div>
           <div className="corfuPriceDiv">
             <h1 className="corfuPriceSmallHeader">from</h1>
-            <h1 className="corfuPriceBigHeader">740$</h1>
+            <h1 className="corfuPriceBigHeader">140$</h1>
             <h1 className="corfuPriceSmallHeader">per person.</h1>
           </div>
         </div>
         <div className="corfuDescriptionDiv">
           <h1 className="corfuDescriptionHeader">
-            Corfu, also known as Kerkyra, is a captivating island in the Ionian
-            Sea, celebrated for its lush landscapes and rich history. Its
-            coastline boasts some of the most beautiful beaches in Greece, from
-            the serene coves of Paleokastritsa to the golden sands of Glyfada.
-            Corfu Town, a UNESCO World Heritage Site, is a blend of Venetian,
-            French, and British influences, with narrow cobblestone streets,
-            elegant arcades, and historic landmarks like the Old Fortress. The
-            island’s countryside is equally enchanting, dotted with olive
-            groves, cypress trees, and picturesque villages such as Pelekas,
-            famous for its stunning sunsets. Visitors can explore cultural gems
-            like the Achilleion Palace, a neoclassical retreat built by Empress
-            Elisabeth of Austria, or stroll through the Mon Repos Estate,
-            steeped in aristocratic history. Corfu’s cuisine is a highlight,
-            offering unique local dishes like sofrito and pastitsada, often
-            paired with the island's excellent wines.
+            Istanbul, Turkey's largest city, is a captivating blend of history,
+            culture, and modernity, straddling the divide between Europe and
+            Asia. Its iconic skyline is dominated by the magnificent Hagia
+            Sophia, a former church and mosque, now a museum that reflects the
+            city’s diverse heritage. The Blue Mosque, with its striking minarets
+            and intricate blue tiles, stands as another symbol of Istanbul’s
+            architectural splendor. The historic Sultanahmet Square is home to
+            the ancient Hippodrome, where chariot races once took place, while
+            the Grand Bazaar offers a maze of shops selling everything from
+            spices to jewelry. Istanbul’s Bosphorus Strait connects the Black
+            Sea and the Sea of Marmara, offering stunning views and boat tours.
+            The city's rich history as Byzantium and Constantinople is evident
+            in landmarks like the Topkapi Palace, home to Ottoman sultans for
+            centuries.
           </h1>
         </div>
         <div className="corfuReservationDiv">
@@ -100,9 +99,9 @@ function Corfu() {
               className="stayDateSelect"
               onChange={handleDateChange}
             >
-              <option>23.05. - 03.06.</option>
-              <option>01.06. - 11.06.</option>
-              <option>15.06. - 25.06.</option>
+              <option>11.04. - 16.04.</option>
+              <option>22.04. - 27.04.</option>
+              <option>03.05. - 08.05.</option>
             </select>
           </div>
           <div className="personsDiv">
@@ -137,4 +136,4 @@ function Corfu() {
   );
 }
 
-export default Corfu;
+export default Istanbul;

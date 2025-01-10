@@ -6,10 +6,10 @@ import "./App.css";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 
-function Corfu() {
-  const [totalPrice, setTotalPrice] = useState(720);
+function GranCanaria() {
+  const [totalPrice, setTotalPrice] = useState(810);
   const [numberOfPersons, setNumberOfPersons] = useState(1);
-  const [stayDate, setStayDate] = useState("23.05. - 03.06.");
+  const [stayDate, setStayDate] = useState("22.07. - 31.07.");
   const [showNotification, setShowNotification] = useState(false);
 
   const { addToCart } = useContext(CartContext);
@@ -17,7 +17,7 @@ function Corfu() {
   const handlePersonsChange = (event) => {
     const selectedPersons = parseInt(event.target.value);
     setNumberOfPersons(selectedPersons);
-    setTotalPrice(selectedPersons * 720);
+    setTotalPrice(selectedPersons * 810);
   };
 
   const handleDateChange = (event) => {
@@ -26,7 +26,7 @@ function Corfu() {
 
   const handleAddToCart = () => {
     const tripDetails = {
-      destination: "Corfu",
+      destination: "GranCanaria",
       stayDate,
       numberOfPersons,
       totalPrice,
@@ -45,50 +45,50 @@ function Corfu() {
       <Header></Header>
       <div className="mainCorfuDiv">
         <div className="corfuImagesDiv">
-          <img className="corfuImg1" src="/public/corfu1.jpg"></img>
+          <img className="corfuImg1" src="/public/grancanaria1.jpg"></img>
           <div className="corfuImagesVerticalDiv">
-            <img className="corfuImg2" src="/public/corfu2.jpg"></img>
-            <img className="corfuImg3" src="/public/corfu3.jpg"></img>
+            <img className="corfuImg2" src="/public/grancanaria2.jpg"></img>
+            <img className="corfuImg3" src="/public/grancanaria3.jpg"></img>
           </div>
         </div>
         <div className="corfuHeaderDiv">
-          <h1 className="corfuHeader">CORFU 10 days</h1>
+          <h1 className="corfuHeader">GRAN CANARIA 9 days</h1>
           <h1 className="corfuInfo">SEASIDE</h1>
+          <h1 className="corfuInfo">FLIGHT</h1>
         </div>
         <div className="infoAboutDiv">
           <div className="corfuHorizontalDiv">
             <div className="corfuDateDiv">
               <img src="/public/calendar.png" className="corfuCalender"></img>
-              <h1 className="corfuNumberOfDays">10 days</h1>
+              <h1 className="corfuNumberOfDays">9 days</h1>
             </div>
             <div className="corfuTravelDiv">
-              <img src="/public/bus.png" className="corfuBusImg"></img>
-              <h1 className="corfuNumberOfDays">BUS</h1>
+              <img src="/public/airplane1.png" className="corfuBusImg"></img>
+              <h1 className="corfuNumberOfDays">FLIGHT</h1>
             </div>
           </div>
           <div className="corfuPriceDiv">
             <h1 className="corfuPriceSmallHeader">from</h1>
-            <h1 className="corfuPriceBigHeader">740$</h1>
+            <h1 className="corfuPriceBigHeader">810$</h1>
             <h1 className="corfuPriceSmallHeader">per person.</h1>
           </div>
         </div>
         <div className="corfuDescriptionDiv">
           <h1 className="corfuDescriptionHeader">
-            Corfu, also known as Kerkyra, is a captivating island in the Ionian
-            Sea, celebrated for its lush landscapes and rich history. Its
-            coastline boasts some of the most beautiful beaches in Greece, from
-            the serene coves of Paleokastritsa to the golden sands of Glyfada.
-            Corfu Town, a UNESCO World Heritage Site, is a blend of Venetian,
-            French, and British influences, with narrow cobblestone streets,
-            elegant arcades, and historic landmarks like the Old Fortress. The
-            island’s countryside is equally enchanting, dotted with olive
-            groves, cypress trees, and picturesque villages such as Pelekas,
-            famous for its stunning sunsets. Visitors can explore cultural gems
-            like the Achilleion Palace, a neoclassical retreat built by Empress
-            Elisabeth of Austria, or stroll through the Mon Repos Estate,
-            steeped in aristocratic history. Corfu’s cuisine is a highlight,
-            offering unique local dishes like sofrito and pastitsada, often
-            paired with the island's excellent wines.
+            Gran Canaria, part of Spain's Canary Islands, is a stunning
+            destination known for its diverse landscapes and year-round mild
+            climate. The island features beautiful beaches, from the golden
+            sands of Maspalomas Beach to the rugged coastline of Agaete, making
+            it a popular spot for sunbathing and water sports. Gran Canaria is
+            often called a "miniature continent" due to its varying landscapes,
+            which include lush green valleys, volcanic mountains, and vast sand
+            dunes. The island’s capital, Las Palmas, offers a mix of urban
+            culture, historic architecture, and a vibrant nightlife scene. The
+            historic district of Vegueta in Las Palmas is home to cobbled
+            streets, colonial buildings, and the impressive Santa Ana Cathedral.
+            Nature lovers can explore the island's hiking trails, including
+            routes through the mountainous interior, such as the Roque Nublo,
+            offering breathtaking views.
           </h1>
         </div>
         <div className="corfuReservationDiv">
@@ -100,9 +100,9 @@ function Corfu() {
               className="stayDateSelect"
               onChange={handleDateChange}
             >
-              <option>23.05. - 03.06.</option>
-              <option>01.06. - 11.06.</option>
-              <option>15.06. - 25.06.</option>
+              <option>22.07. - 31.07.</option>
+              <option>02.08. - 11.08.</option>
+              <option>16.08. - 25.08.</option>
             </select>
           </div>
           <div className="personsDiv">
@@ -137,4 +137,4 @@ function Corfu() {
   );
 }
 
-export default Corfu;
+export default GranCanaria;

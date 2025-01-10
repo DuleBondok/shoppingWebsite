@@ -44,7 +44,7 @@
     overflow: hidden;
     position: absolute;
     top: 10vh;
-    left: 17vw;
+    left: 20vw;
 }
 
 .corfuImagesVerticalDiv {
@@ -258,6 +258,54 @@
     scale: 1.2;
 }
 
+.notification {
+    position: fixed;
+    top: 12vh;
+    right: -5vh;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000;
+    transition: right 1s ease;
+  }
+  
+  .notification.show {
+    right: 2vh;
+  }
+  
+  .notification.hide {
+    right: -5vh;
+  }
+
+  .cartDetailsDiv {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 9vh;
+    right: 5vh;
+    width: 23vw;
+    z-index: 150;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+
+  .cartItem {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    border-bottom: 1px solid rgb(190, 189, 189);
+    z-index: 150;
+    justify-content: center;
+  }
+
+  .deleteImg {
+    height: 2.5vh;
+    margin-top: 2vh;
+  }
+
 @media screen and (max-width: 768px) {
     .mainCorfuDiv {
         width: 50vw;
@@ -372,6 +420,17 @@
 
     .totalPriceHeader {
         width: 30vw;
+    }
+
+    .addToCartBtn {
+        top: 178vh;
+        width: 40vw;
+        left: 30vw;
+    }
+
+    .cartDetailsDiv {
+        width: 70vw;
+        right: 0;
     }
 
 }

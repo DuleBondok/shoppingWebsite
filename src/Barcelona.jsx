@@ -6,10 +6,10 @@ import "./App.css";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 
-function Corfu() {
+function Barcelona() {
   const [totalPrice, setTotalPrice] = useState(720);
   const [numberOfPersons, setNumberOfPersons] = useState(1);
-  const [stayDate, setStayDate] = useState("23.05. - 03.06.");
+  const [stayDate, setStayDate] = useState("11.04. - 15.04.");
   const [showNotification, setShowNotification] = useState(false);
 
   const { addToCart } = useContext(CartContext);
@@ -26,7 +26,7 @@ function Corfu() {
 
   const handleAddToCart = () => {
     const tripDetails = {
-      destination: "Corfu",
+      destination: "Barcelona",
       stayDate,
       numberOfPersons,
       totalPrice,
@@ -45,50 +45,51 @@ function Corfu() {
       <Header></Header>
       <div className="mainCorfuDiv">
         <div className="corfuImagesDiv">
-          <img className="corfuImg1" src="/public/corfu1.jpg"></img>
+          <img className="corfuImg1" src="/public/barcelona1.jpg"></img>
           <div className="corfuImagesVerticalDiv">
-            <img className="corfuImg2" src="/public/corfu2.jpg"></img>
-            <img className="corfuImg3" src="/public/corfu3.jpg"></img>
+            <img className="corfuImg2" src="/public/barcelona2.jpg"></img>
+            <img className="corfuImg3" src="/public/barcelona3.jpg"></img>
           </div>
         </div>
         <div className="corfuHeaderDiv">
-          <h1 className="corfuHeader">CORFU 10 days</h1>
-          <h1 className="corfuInfo">SEASIDE</h1>
+          <h1 className="corfuHeader">BARCELONA 4 days</h1>
+          <h1 className="corfuInfo">CULTURAL</h1>
+          <h1 className="corfuInfo">FLIGHT</h1>
         </div>
         <div className="infoAboutDiv">
           <div className="corfuHorizontalDiv">
             <div className="corfuDateDiv">
               <img src="/public/calendar.png" className="corfuCalender"></img>
-              <h1 className="corfuNumberOfDays">10 days</h1>
+              <h1 className="corfuNumberOfDays">4 days</h1>
             </div>
             <div className="corfuTravelDiv">
-              <img src="/public/bus.png" className="corfuBusImg"></img>
-              <h1 className="corfuNumberOfDays">BUS</h1>
+              <img src="/public/airplane1.png" className="corfuBusImg"></img>
+              <h1 className="corfuNumberOfDays">FLIGHT</h1>
             </div>
           </div>
           <div className="corfuPriceDiv">
             <h1 className="corfuPriceSmallHeader">from</h1>
-            <h1 className="corfuPriceBigHeader">740$</h1>
+            <h1 className="corfuPriceBigHeader">720$</h1>
             <h1 className="corfuPriceSmallHeader">per person.</h1>
           </div>
         </div>
         <div className="corfuDescriptionDiv">
           <h1 className="corfuDescriptionHeader">
-            Corfu, also known as Kerkyra, is a captivating island in the Ionian
-            Sea, celebrated for its lush landscapes and rich history. Its
-            coastline boasts some of the most beautiful beaches in Greece, from
-            the serene coves of Paleokastritsa to the golden sands of Glyfada.
-            Corfu Town, a UNESCO World Heritage Site, is a blend of Venetian,
-            French, and British influences, with narrow cobblestone streets,
-            elegant arcades, and historic landmarks like the Old Fortress. The
-            island’s countryside is equally enchanting, dotted with olive
-            groves, cypress trees, and picturesque villages such as Pelekas,
-            famous for its stunning sunsets. Visitors can explore cultural gems
-            like the Achilleion Palace, a neoclassical retreat built by Empress
-            Elisabeth of Austria, or stroll through the Mon Repos Estate,
-            steeped in aristocratic history. Corfu’s cuisine is a highlight,
-            offering unique local dishes like sofrito and pastitsada, often
-            paired with the island's excellent wines.
+            Barcelona, the vibrant capital of Catalonia in Spain, is a city that
+            seamlessly blends modernist architecture with historical charm. One
+            of its most famous landmarks is the Sagrada Família, the
+            awe-inspiring basilica designed by architect Antoni Gaudí, which has
+            been under construction for over a century. The city's bustling
+            streets, particularly Las Ramblas, are lined with shops, cafés, and
+            street performers, creating an energetic atmosphere that attracts
+            visitors from around the world. Barcelona is also home to beautiful
+            parks, such as the colorful Park Güell, another of Gaudí's
+            masterpieces, offering panoramic views of the city. The Gothic
+            Quarter, with its narrow medieval streets and hidden squares, takes
+            visitors on a journey through the city's rich history. The city's
+            beaches, like Barceloneta Beach, offer a perfect spot for
+            relaxation, while the Mediterranean climate ensures year-round
+            sunshine.
           </h1>
         </div>
         <div className="corfuReservationDiv">
@@ -100,9 +101,9 @@ function Corfu() {
               className="stayDateSelect"
               onChange={handleDateChange}
             >
-              <option>23.05. - 03.06.</option>
-              <option>01.06. - 11.06.</option>
-              <option>15.06. - 25.06.</option>
+              <option>11.04. - 15.04.</option>
+              <option>22.04. - 26.04.</option>
+              <option>03.05. - 07.05.</option>
             </select>
           </div>
           <div className="personsDiv">
@@ -137,4 +138,4 @@ function Corfu() {
   );
 }
 
-export default Corfu;
+export default Barcelona;

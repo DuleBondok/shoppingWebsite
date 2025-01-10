@@ -6,10 +6,10 @@ import "./App.css";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 
-function Corfu() {
-  const [totalPrice, setTotalPrice] = useState(720);
+function Budva() {
+  const [totalPrice, setTotalPrice] = useState(600);
   const [numberOfPersons, setNumberOfPersons] = useState(1);
-  const [stayDate, setStayDate] = useState("23.05. - 03.06.");
+  const [stayDate, setStayDate] = useState("28.06. - 06.07.");
   const [showNotification, setShowNotification] = useState(false);
 
   const { addToCart } = useContext(CartContext);
@@ -17,7 +17,7 @@ function Corfu() {
   const handlePersonsChange = (event) => {
     const selectedPersons = parseInt(event.target.value);
     setNumberOfPersons(selectedPersons);
-    setTotalPrice(selectedPersons * 720);
+    setTotalPrice(selectedPersons * 600);
   };
 
   const handleDateChange = (event) => {
@@ -26,7 +26,7 @@ function Corfu() {
 
   const handleAddToCart = () => {
     const tripDetails = {
-      destination: "Corfu",
+      destination: "Budva",
       stayDate,
       numberOfPersons,
       totalPrice,
@@ -45,21 +45,21 @@ function Corfu() {
       <Header></Header>
       <div className="mainCorfuDiv">
         <div className="corfuImagesDiv">
-          <img className="corfuImg1" src="/public/corfu1.jpg"></img>
+          <img className="corfuImg1" src="/public/budva1.jpg"></img>
           <div className="corfuImagesVerticalDiv">
-            <img className="corfuImg2" src="/public/corfu2.jpg"></img>
-            <img className="corfuImg3" src="/public/corfu3.jpg"></img>
+            <img className="corfuImg2" src="/public/budva2.jpg"></img>
+            <img className="corfuImg3" src="/public/budva3.jpg"></img>
           </div>
         </div>
         <div className="corfuHeaderDiv">
-          <h1 className="corfuHeader">CORFU 10 days</h1>
+          <h1 className="corfuHeader">BUDVA 8 days</h1>
           <h1 className="corfuInfo">SEASIDE</h1>
         </div>
         <div className="infoAboutDiv">
           <div className="corfuHorizontalDiv">
             <div className="corfuDateDiv">
               <img src="/public/calendar.png" className="corfuCalender"></img>
-              <h1 className="corfuNumberOfDays">10 days</h1>
+              <h1 className="corfuNumberOfDays">8 days</h1>
             </div>
             <div className="corfuTravelDiv">
               <img src="/public/bus.png" className="corfuBusImg"></img>
@@ -68,27 +68,25 @@ function Corfu() {
           </div>
           <div className="corfuPriceDiv">
             <h1 className="corfuPriceSmallHeader">from</h1>
-            <h1 className="corfuPriceBigHeader">740$</h1>
+            <h1 className="corfuPriceBigHeader">600$</h1>
             <h1 className="corfuPriceSmallHeader">per person.</h1>
           </div>
         </div>
         <div className="corfuDescriptionDiv">
           <h1 className="corfuDescriptionHeader">
-            Corfu, also known as Kerkyra, is a captivating island in the Ionian
-            Sea, celebrated for its lush landscapes and rich history. Its
-            coastline boasts some of the most beautiful beaches in Greece, from
-            the serene coves of Paleokastritsa to the golden sands of Glyfada.
-            Corfu Town, a UNESCO World Heritage Site, is a blend of Venetian,
-            French, and British influences, with narrow cobblestone streets,
-            elegant arcades, and historic landmarks like the Old Fortress. The
-            island’s countryside is equally enchanting, dotted with olive
-            groves, cypress trees, and picturesque villages such as Pelekas,
-            famous for its stunning sunsets. Visitors can explore cultural gems
-            like the Achilleion Palace, a neoclassical retreat built by Empress
-            Elisabeth of Austria, or stroll through the Mon Repos Estate,
-            steeped in aristocratic history. Corfu’s cuisine is a highlight,
-            offering unique local dishes like sofrito and pastitsada, often
-            paired with the island's excellent wines.
+            Budva, located on the Adriatic coast of Montenegro, is a charming
+            coastal town known for its beautiful beaches and vibrant nightlife.
+            Its old town, Budva Old Town, is a maze of narrow cobblestone
+            streets, historic buildings, and ancient city walls that reflect the
+            town's rich history, which dates back over 2,500 years. The Budva
+            Riviera boasts some of the most stunning beaches in Montenegro, such
+            as Mogren Beach and Jaz Beach, perfect for sunbathing and swimming.
+            The town is also home to several historic landmarks, including the
+            Citadel, a fortress offering panoramic views of the town and sea.
+            Budva’s nightlife is lively, with numerous bars, clubs, and beach
+            parties, attracting tourists seeking entertainment and fun. The
+            town’s Mediterranean climate ensures warm summers and mild winters,
+            making it a popular destination year-round.
           </h1>
         </div>
         <div className="corfuReservationDiv">
@@ -100,9 +98,9 @@ function Corfu() {
               className="stayDateSelect"
               onChange={handleDateChange}
             >
-              <option>23.05. - 03.06.</option>
-              <option>01.06. - 11.06.</option>
-              <option>15.06. - 25.06.</option>
+              <option>28.06. - 06.07.</option>
+              <option>19.07. - 27.07.</option>
+              <option>30.07. - 08.08.</option>
             </select>
           </div>
           <div className="personsDiv">
@@ -137,4 +135,4 @@ function Corfu() {
   );
 }
 
-export default Corfu;
+export default Budva;

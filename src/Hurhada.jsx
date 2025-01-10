@@ -6,10 +6,10 @@ import "./App.css";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 
-function Corfu() {
-  const [totalPrice, setTotalPrice] = useState(720);
+function Hurghada() {
+  const [totalPrice, setTotalPrice] = useState(960);
   const [numberOfPersons, setNumberOfPersons] = useState(1);
-  const [stayDate, setStayDate] = useState("23.05. - 03.06.");
+  const [stayDate, setStayDate] = useState("12.07. - 22.07.");
   const [showNotification, setShowNotification] = useState(false);
 
   const { addToCart } = useContext(CartContext);
@@ -17,7 +17,7 @@ function Corfu() {
   const handlePersonsChange = (event) => {
     const selectedPersons = parseInt(event.target.value);
     setNumberOfPersons(selectedPersons);
-    setTotalPrice(selectedPersons * 720);
+    setTotalPrice(selectedPersons * 960);
   };
 
   const handleDateChange = (event) => {
@@ -26,7 +26,7 @@ function Corfu() {
 
   const handleAddToCart = () => {
     const tripDetails = {
-      destination: "Corfu",
+      destination: "Hurghada",
       stayDate,
       numberOfPersons,
       totalPrice,
@@ -45,15 +45,16 @@ function Corfu() {
       <Header></Header>
       <div className="mainCorfuDiv">
         <div className="corfuImagesDiv">
-          <img className="corfuImg1" src="/public/corfu1.jpg"></img>
+          <img className="corfuImg1" src="/public/hurghada1.jpg"></img>
           <div className="corfuImagesVerticalDiv">
-            <img className="corfuImg2" src="/public/corfu2.jpg"></img>
-            <img className="corfuImg3" src="/public/corfu3.jpg"></img>
+            <img className="corfuImg2" src="/public/hurghada2.jpg"></img>
+            <img className="corfuImg3" src="/public/hurghada3.jpg"></img>
           </div>
         </div>
         <div className="corfuHeaderDiv">
-          <h1 className="corfuHeader">CORFU 10 days</h1>
-          <h1 className="corfuInfo">SEASIDE</h1>
+          <h1 className="corfuHeader">HURGHADA 10 days</h1>
+          <h1 className="corfuInfo">SEASIDEL</h1>
+          <h1 className="corfuInfo">FLIGHT</h1>
         </div>
         <div className="infoAboutDiv">
           <div className="corfuHorizontalDiv">
@@ -62,33 +63,29 @@ function Corfu() {
               <h1 className="corfuNumberOfDays">10 days</h1>
             </div>
             <div className="corfuTravelDiv">
-              <img src="/public/bus.png" className="corfuBusImg"></img>
-              <h1 className="corfuNumberOfDays">BUS</h1>
+              <img src="/public/airplane1.png" className="corfuBusImg"></img>
+              <h1 className="corfuNumberOfDays">FLIGHT</h1>
             </div>
           </div>
           <div className="corfuPriceDiv">
             <h1 className="corfuPriceSmallHeader">from</h1>
-            <h1 className="corfuPriceBigHeader">740$</h1>
+            <h1 className="corfuPriceBigHeader">960$</h1>
             <h1 className="corfuPriceSmallHeader">per person.</h1>
           </div>
         </div>
         <div className="corfuDescriptionDiv">
           <h1 className="corfuDescriptionHeader">
-            Corfu, also known as Kerkyra, is a captivating island in the Ionian
-            Sea, celebrated for its lush landscapes and rich history. Its
-            coastline boasts some of the most beautiful beaches in Greece, from
-            the serene coves of Paleokastritsa to the golden sands of Glyfada.
-            Corfu Town, a UNESCO World Heritage Site, is a blend of Venetian,
-            French, and British influences, with narrow cobblestone streets,
-            elegant arcades, and historic landmarks like the Old Fortress. The
-            island’s countryside is equally enchanting, dotted with olive
-            groves, cypress trees, and picturesque villages such as Pelekas,
-            famous for its stunning sunsets. Visitors can explore cultural gems
-            like the Achilleion Palace, a neoclassical retreat built by Empress
-            Elisabeth of Austria, or stroll through the Mon Repos Estate,
-            steeped in aristocratic history. Corfu’s cuisine is a highlight,
-            offering unique local dishes like sofrito and pastitsada, often
-            paired with the island's excellent wines.
+            Hurghada, located on the Red Sea coast of Egypt, is a popular resort
+            town known for its pristine beaches, crystal-clear waters, and
+            vibrant coral reefs. The town offers excellent opportunities for
+            water activities, including snorkeling, diving, and kite surfing,
+            attracting tourists from around the world. Hurghada’s warm, sunny
+            climate makes it a year-round destination, with pleasant
+            temperatures even in winter. The town is home to a range of
+            luxurious resorts, spas, and restaurants, making it ideal for
+            relaxation and indulgence. Hurghada's Marina Boulevard is lined with
+            cafes, shops, and restaurants, offering a lively atmosphere for both
+            locals and visitors.
           </h1>
         </div>
         <div className="corfuReservationDiv">
@@ -100,9 +97,9 @@ function Corfu() {
               className="stayDateSelect"
               onChange={handleDateChange}
             >
-              <option>23.05. - 03.06.</option>
-              <option>01.06. - 11.06.</option>
-              <option>15.06. - 25.06.</option>
+              <option>12.07. - 22.07.</option>
+              <option>22.08. - 02.09.</option>
+              <option>03.09. - 13.09.</option>
             </select>
           </div>
           <div className="personsDiv">
@@ -137,4 +134,4 @@ function Corfu() {
   );
 }
 
-export default Corfu;
+export default Hurghada;
