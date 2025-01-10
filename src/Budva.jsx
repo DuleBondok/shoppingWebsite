@@ -45,10 +45,10 @@ function Budva() {
       <Header></Header>
       <div className="mainCorfuDiv">
         <div className="corfuImagesDiv">
-          <img className="corfuImg1" src="/public/budva1.jpg"></img>
+          <img className="corfuImg1" src="/budva1.jpg"></img>
           <div className="corfuImagesVerticalDiv">
-            <img className="corfuImg2" src="/public/budva2.jpg"></img>
-            <img className="corfuImg3" src="/public/budva3.jpg"></img>
+            <img className="corfuImg2" src="/budva2.jpg"></img>
+            <img className="corfuImg3" src="/budva3.jpg"></img>
           </div>
         </div>
         <div className="corfuHeaderDiv">
@@ -58,11 +58,11 @@ function Budva() {
         <div className="infoAboutDiv">
           <div className="corfuHorizontalDiv">
             <div className="corfuDateDiv">
-              <img src="/public/calendar.png" className="corfuCalender"></img>
+              <img src="/calendar.png" className="corfuCalender"></img>
               <h1 className="corfuNumberOfDays">8 days</h1>
             </div>
             <div className="corfuTravelDiv">
-              <img src="/public/bus.png" className="corfuBusImg"></img>
+              <img src="/bus.png" className="corfuBusImg"></img>
               <h1 className="corfuNumberOfDays">BUS</h1>
             </div>
           </div>

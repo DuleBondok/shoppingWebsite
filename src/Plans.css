@@ -208,10 +208,10 @@
     background-color: white;
     font-size: 1rem;
     padding-left: 3vh;
-    appearance: none; /* Removes default styles */
-      -webkit-appearance: none; /* Safari */
-      -moz-appearance: none; /* Firefox */
-      background-image: url("/public/downArrow.png");
+    appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url("/downArrow.png");
       background-repeat: no-repeat;
       background-size: 2.5vh;
       background-position: right 2vh center;

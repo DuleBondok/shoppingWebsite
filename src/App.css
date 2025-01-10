@@ -168,21 +168,21 @@ cursor: pointer;
 
 @keyframes slideUp {
   0% {
-    transform: translateY(100px); /* Start from 100px below */
-    opacity: 0; /* Initially hidden */
+    transform: translateY(100px);
+    opacity: 0;
   }
   50% {
-    transform: translateY(0); /* Move to normal position */
-    opacity: 1; /* Fully visible */
+    transform: translateY(0);
+    opacity: 1;
   }
   100% {
-    transform: translateY(0); /* Move back down to start position */
-    opacity: 1; /* Fade out */
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 .element {
-  animation: slideUp 4s ease-out infinite; /* Repeat every 4 seconds */
+  animation: slideUp 4s ease-out infinite;
 }
 
 .listOfDestinationsDiv {

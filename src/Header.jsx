@@ -22,7 +22,7 @@ function Header() {
       <div className="mainHeaderDiv">
         <Link to="/home">
           <div className="logoDiv">
-            <img src="./public/airplane.png" className="airplaneImage"></img>
+            <img src="/airplane.png" className="airplaneImage"></img>
             <div className="logoHeaderDiv">
               <h1 className="mainHeaderText">TravelBuddy</h1>
               <h1 className="mainHeaderParagraph">
@@ -58,7 +58,7 @@ function Header() {
                   <p>{item.numberOfPersons}</p>
                   <p>{item.totalPrice}$</p>
                   <img
-                    src="/public/remove.png"
+                    src="/remove.png"
                     className="deleteImg"
                     onClick={() => handleDeleteItem(index)}
                   ></img>

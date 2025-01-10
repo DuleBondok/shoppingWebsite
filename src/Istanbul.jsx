@@ -45,10 +45,10 @@ function Istanbul() {
       <Header></Header>
       <div className="mainCorfuDiv">
         <div className="corfuImagesDiv">
-          <img className="corfuImg1" src="/public/istanbul1.jpg"></img>
+          <img className="corfuImg1" src="/istanbul1.jpg"></img>
           <div className="corfuImagesVerticalDiv">
-            <img className="corfuImg2" src="/public/istanbul2.jpg"></img>
-            <img className="corfuImg3" src="/public/istanbul3.jpg"></img>
+            <img className="corfuImg2" src="/istanbul2.jpg"></img>
+            <img className="corfuImg3" src="/istanbul3.jpg"></img>
           </div>
         </div>
         <div className="corfuHeaderDiv">
@@ -58,11 +58,11 @@ function Istanbul() {
         <div className="infoAboutDiv">
           <div className="corfuHorizontalDiv">
             <div className="corfuDateDiv">
-              <img src="/public/calendar.png" className="corfuCalender"></img>
+              <img src="/calendar.png" className="corfuCalender"></img>
               <h1 className="corfuNumberOfDays">4 days</h1>
             </div>
             <div className="corfuTravelDiv">
-              <img src="/public/bus.png" className="corfuBusImg"></img>
+              <img src="/bus.png" className="corfuBusImg"></img>
               <h1 className="corfuNumberOfDays">BUS</h1>
             </div>
           </div>

@@ -45,10 +45,10 @@ function GranCanaria() {
       <Header></Header>
       <div className="mainCorfuDiv">
         <div className="corfuImagesDiv">
-          <img className="corfuImg1" src="/public/grancanaria1.jpg"></img>
+          <img className="corfuImg1" src="/grancanaria1.jpg"></img>
           <div className="corfuImagesVerticalDiv">
-            <img className="corfuImg2" src="/public/grancanaria2.jpg"></img>
-            <img className="corfuImg3" src="/public/grancanaria3.jpg"></img>
+            <img className="corfuImg2" src="/grancanaria2.jpg"></img>
+            <img className="corfuImg3" src="/grancanaria3.jpg"></img>
           </div>
         </div>
         <div className="corfuHeaderDiv">
@@ -59,11 +59,11 @@ function GranCanaria() {
         <div className="infoAboutDiv">
           <div className="corfuHorizontalDiv">
             <div className="corfuDateDiv">
-              <img src="/public/calendar.png" className="corfuCalender"></img>
+              <img src="/calendar.png" className="corfuCalender"></img>
               <h1 className="corfuNumberOfDays">9 days</h1>
             </div>
             <div className="corfuTravelDiv">
-              <img src="/public/airplane1.png" className="corfuBusImg"></img>
+              <img src="/airplane1.png" className="corfuBusImg"></img>
               <h1 className="corfuNumberOfDays">FLIGHT</h1>
             </div>
           </div>

@@ -256,35 +256,35 @@ function ListOf() {
       <Header />
       <div className="listOfDestinationsDiv">
         <div className="countryDiv" onClick={handleAllClick}>
-          <img src="/public/list.png" className="countryImg"></img>
+          <img src="/list.png" className="countryImg"></img>
           <h1 className="countryNames">ALL DESTINATIONS</h1>
         </div>
         <div className="countryDiv" onClick={handleCapitalClick}>
-          <img src="/public/european-union.png" className="countryImg"></img>
+          <img src="/european-union.png" className="countryImg"></img>
           <h1 className="countryNames">EU Capitals</h1>
         </div>
         <div className="countryDiv" onClick={handleGreeceClick}>
-          <img src="/public/greece.png" className="countryImg"></img>
+          <img src="/greece.png" className="countryImg"></img>
           <h1 className="countryNames">Greece</h1>
         </div>
         <div className="countryDiv" onClick={handleItalyClick}>
-          <img src="/public/italy.png" className="countryImg"></img>
+          <img src="/italy.png" className="countryImg"></img>
           <h1 className="countryNames">Italy</h1>
         </div>
         <div className="countryDiv" onClick={handleSpainClick}>
-          <img src="/public/spain.png" className="countryImg"></img>
+          <img src="/spain.png" className="countryImg"></img>
           <h1 className="countryNames">Spain</h1>
         </div>
         <div className="countryDiv" onClick={handleMontenegroClick}>
-          <img src="/public/montenegro.png" className="countryImg"></img>
+          <img src="/montenegro.png" className="countryImg"></img>
           <h1 className="countryNames">Montenegro</h1>
         </div>
         <div className="countryDiv" onClick={handleTurkeyClick}>
-          <img src="/public/turkey.png" className="countryImg"></img>
+          <img src="/turkey.png" className="countryImg"></img>
           <h1 className="countryNames">Turkiye</h1>
         </div>
         <div className="countryDiv" onClick={handleEgyptClick}>
-          <img src="/public/egypt.png" className="countryImg"></img>
+          <img src="/egypt.png" className="countryImg"></img>
           <h1 className="countryNames">Egypt</h1>
         </div>
       </div>
@@ -300,22 +300,22 @@ function ListOf() {
             <p>Loading Image 1...</p>
           )}
           <div className="signDiv">
-            <img src="/public/vacations.png" className="signIcon"></img>
+            <img src="/vacations.png" className="signIcon"></img>
             <h1 className="signHeader">SEASIDE</h1>
           </div>
           <h1 className="destinationName">CORFU 10 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">10 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img src="/public/bus.png" className="transportIcon"></img>
+              <img src="/bus.png" className="transportIcon"></img>
               <h1 className="transportName">BUS</h1>
             </div>
           </div>
           <div className="foodDiv">
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">BREAKFAST INCLUDED</h1>
           </div>
           <div className="priceDiv">
@@ -337,29 +337,26 @@ function ListOf() {
             <p>Loading Image 2...</p>
           )}
           <div className="signDiv">
-            <img src="/public/vacations.png" className="signIcon"></img>
+            <img src="/vacations.png" className="signIcon"></img>
             <h1 className="signHeader">SEASIDE</h1>
           </div>
           <div className="signDivSecond">
-            <img src="/public/airplaneWhite.png" className="signIcon"></img>
+            <img src="/airplaneWhite.png" className="signIcon"></img>
             <h1 className="signHeader">FLIGHT</h1>
           </div>
           <h1 className="destinationName">ZAKYNTHOS 8 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">8 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img
-                src="/public/airplane1.png"
-                className="transportIconAirplane"
-              ></img>
+              <img src="/airplane1.png" className="transportIconAirplane"></img>
               <h1 className="transportName">FLIGHT</h1>
             </div>
           </div>
           <div className="foodDiv" style={{ marginLeft: "-0.5vw" }}>
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">ALL INCLUSIVE</h1>
           </div>
           <div className="priceDiv">
@@ -384,29 +381,26 @@ function ListOf() {
             <p>Loading Image 3...</p>
           )}
           <div className="signDiv">
-            <img src="/public/monument.png" className="signIcon"></img>
+            <img src="/monument.png" className="signIcon"></img>
             <h1 className="signHeader">CULTURAL</h1>
           </div>
           <div className="signDivSecond">
-            <img src="/public/airplaneWhite.png" className="signIcon"></img>
+            <img src="/airplaneWhite.png" className="signIcon"></img>
             <h1 className="signHeader">FLIGHT</h1>
           </div>
           <h1 className="destinationName">ROME 4 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">4 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img
-                src="/public/airplane1.png"
-                className="transportIconAirplane"
-              ></img>
+              <img src="/airplane1.png" className="transportIconAirplane"></img>
               <h1 className="transportName">FLIGHT</h1>
             </div>
           </div>
           <div className="foodDiv">
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">BREAKFAST INCLUDED</h1>
           </div>
           <div className="priceDiv">
@@ -428,25 +422,22 @@ function ListOf() {
             <p>Loading Image 4...</p>
           )}
           <div className="signDiv">
-            <img src="/public/monument.png" className="signIcon"></img>
+            <img src="/monument.png" className="signIcon"></img>
             <h1 className="signHeader">CULTURAL</h1>
           </div>
           <h1 className="destinationName">PRAGUE 5 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">5 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img
-                src="/public/bus.png"
-                className="transportIconAirplane"
-              ></img>
+              <img src="/bus.png" className="transportIconAirplane"></img>
               <h1 className="transportName">BUS</h1>
             </div>
           </div>
           <div className="foodDiv" style={{ marginLeft: "-0.5vw" }}>
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">NO BREAKFAST</h1>
           </div>
           <div className="priceDiv">
@@ -469,26 +460,23 @@ function ListOf() {
           )}
           <div className="mainDownDiv">
             <div className="signDivDown">
-              <img src="/public/monument.png" className="signIcon"></img>
+              <img src="/monument.png" className="signIcon"></img>
               <h1 className="signHeader">CULTURAL</h1>
             </div>
           </div>
           <h1 className="destinationName">BUDAPEST 4 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">4 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img
-                src="/public/bus.png"
-                className="transportIconAirplane"
-              ></img>
+              <img src="/bus.png" className="transportIconAirplane"></img>
               <h1 className="transportName">BUS</h1>
             </div>
           </div>
           <div className="foodDiv">
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">BREAKFAST INCLUDED</h1>
           </div>
           <div className="priceDiv">
@@ -512,30 +500,27 @@ function ListOf() {
           )}
           <div className="mainDownDiv">
             <div className="signDivDown">
-              <img src="/public/vacations.png" className="signIcon"></img>
+              <img src="/vacations.png" className="signIcon"></img>
               <h1 className="signHeader">SEASIDE</h1>
             </div>
             <div className="signDivSecondDown">
-              <img src="/public/airplaneWhite.png" className="signIcon"></img>
+              <img src="/airplaneWhite.png" className="signIcon"></img>
               <h1 className="signHeader">FLIGHT</h1>
             </div>
           </div>
           <h1 className="destinationName">SICILY 11 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">11 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img
-                src="/public/airplane1.png"
-                className="transportIconAirplane"
-              ></img>
+              <img src="/airplane1.png" className="transportIconAirplane"></img>
               <h1 className="transportName">FLIGHT</h1>
             </div>
           </div>
           <div className="foodDiv">
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">ULTRA ALL INCLUSIVE</h1>
           </div>
           <div className="priceDiv">
@@ -558,30 +543,27 @@ function ListOf() {
           )}
           <div className="mainDownDiv">
             <div className="signDivDown">
-              <img src="/public/monument.png" className="signIcon"></img>
+              <img src="/monument.png" className="signIcon"></img>
               <h1 className="signHeader">CULTURAL</h1>
             </div>
             <div className="signDivSecondDown">
-              <img src="/public/airplaneWhite.png" className="signIcon"></img>
+              <img src="/airplaneWhite.png" className="signIcon"></img>
               <h1 className="signHeader">FLIGHT</h1>
             </div>
           </div>
           <h1 className="destinationName">BARCELONA 4 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">4 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img
-                src="/public/airplane1.png"
-                className="transportIconAirplane"
-              ></img>
+              <img src="/airplane1.png" className="transportIconAirplane"></img>
               <h1 className="transportName">FLIGHT</h1>
             </div>
           </div>
           <div className="foodDiv">
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">BREAKFAST INCLUDED</h1>
           </div>
           <div className="priceDiv">
@@ -607,26 +589,23 @@ function ListOf() {
           )}
           <div className="mainDownDiv">
             <div className="signDivDown">
-              <img src="/public/vacations.png" className="signIcon"></img>
+              <img src="/vacations.png" className="signIcon"></img>
               <h1 className="signHeader">SEASIDE</h1>
             </div>
           </div>
           <h1 className="destinationName">BUDVA 8 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">8 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img
-                src="/public/bus.png"
-                className="transportIconAirplane"
-              ></img>
+              <img src="/bus.png" className="transportIconAirplane"></img>
               <h1 className="transportName">BUS</h1>
             </div>
           </div>
           <div className="foodDiv" style={{ marginLeft: "-0.5vw" }}>
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">NO BREAKFAST</h1>
           </div>
           <div className="priceDiv">
@@ -649,30 +628,27 @@ function ListOf() {
           )}
           <div className="mainDownDiv">
             <div className="signDivDown">
-              <img src="/public/vacations.png" className="signIcon"></img>
+              <img src="/vacations.png" className="signIcon"></img>
               <h1 className="signHeader">SEASIDE</h1>
             </div>
             <div className="signDivSecondDown">
-              <img src="/public/airplaneWhite.png" className="signIcon"></img>
+              <img src="/airplaneWhite.png" className="signIcon"></img>
               <h1 className="signHeader">FLIGHT</h1>
             </div>
           </div>
           <h1 className="destinationName">GRAN CANARIA 9 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">9 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img
-                src="/public/airplane1.png"
-                className="transportIconAirplane"
-              ></img>
+              <img src="/airplane1.png" className="transportIconAirplane"></img>
               <h1 className="transportName">FLIGHT</h1>
             </div>
           </div>
           <div className="foodDiv">
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">BREAKFAST INCLUDED</h1>
           </div>
           <div className="priceDiv">
@@ -698,26 +674,23 @@ function ListOf() {
           )}
           <div className="mainDownDiv">
             <div className="signDivDown">
-              <img src="/public/monument.png" className="signIcon"></img>
+              <img src="/monument.png" className="signIcon"></img>
               <h1 className="signHeader">CULTURAL</h1>
             </div>
           </div>
           <h1 className="destinationName">ISTANBUL 5 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">5 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img
-                src="/public/bus.png"
-                className="transportIconAirplane"
-              ></img>
+              <img src="/bus.png" className="transportIconAirplane"></img>
               <h1 className="transportName">BUS</h1>
             </div>
           </div>
           <div className="foodDiv">
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">BREAKFAST INCLUDED</h1>
           </div>
           <div className="priceDiv">
@@ -741,30 +714,27 @@ function ListOf() {
           )}
           <div className="mainDownDiv">
             <div className="signDivDown">
-              <img src="/public/vacations.png" className="signIcon"></img>
+              <img src="/vacations.png" className="signIcon"></img>
               <h1 className="signHeader">SEASIDE</h1>
             </div>
             <div className="signDivSecondDown">
-              <img src="/public/airplaneWhite.png" className="signIcon"></img>
+              <img src="/airplaneWhite.png" className="signIcon"></img>
               <h1 className="signHeader">FLIGHT</h1>
             </div>
           </div>
           <h1 className="destinationName">BODRUM 11 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">11 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img
-                src="/public/airplane1.png"
-                className="transportIconAirplane"
-              ></img>
+              <img src="/airplane1.png" className="transportIconAirplane"></img>
               <h1 className="transportName">FLIGHT</h1>
             </div>
           </div>
           <div className="foodDiv">
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">ULTRA ALL INCLUSIVE</h1>
           </div>
           <div className="priceDiv">
@@ -788,26 +758,23 @@ function ListOf() {
           )}
           <div className="mainDownDiv">
             <div className="signDivDown">
-              <img src="/public/vacations.png" className="signIcon"></img>
+              <img src="/vacations.png" className="signIcon"></img>
               <h1 className="signHeader">SEASIDE</h1>
             </div>
           </div>
           <h1 className="destinationName">HURGHADA 10 DAYS</h1>
           <div className="mainDescriptionDiv">
             <div className="calenderDiv">
-              <img src="/public/calendar.png" className="calendarIcon"></img>
+              <img src="/calendar.png" className="calendarIcon"></img>
               <h1 className="numberOfDays">10 DAYS</h1>
             </div>
             <div className="transportDiv">
-              <img
-                src="/public/airplane1.png"
-                className="transportIconAirplane"
-              ></img>
+              <img src="/airplane1.png" className="transportIconAirplane"></img>
               <h1 className="transportName">BUS</h1>
             </div>
           </div>
           <div className="foodDiv" style={{ marginLeft: "-0.5vw" }}>
-            <img src="/public/breakfast.png" className="foodIcon"></img>
+            <img src="/breakfast.png" className="foodIcon"></img>
             <h1 className="foodHeader">ALL INCLUSIVE</h1>
           </div>
           <div className="priceDiv">
