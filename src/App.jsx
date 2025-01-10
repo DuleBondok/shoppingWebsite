@@ -14,7 +14,7 @@ import Budva from "./Budva";
 import GranCanaria from "./GranCanaria";
 import Istanbul from "./Istanbul";
 import Bodrum from "./Bodrum";
-import Hurghada from "./Hurhada";
+import Hurghada from "./Hurghada";
 import CartProvider from "./CartContext";
 
 function App() {
